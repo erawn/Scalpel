@@ -7,6 +7,12 @@ Scalpel is a Python Static Analysis Framework. It provides essential program ana
 
 <img src="https://github.com/SMAT-Lab/Scalpel/blob/main/docs/source/_static/resources/Scalpel.svg" width="550">
 
+
+chmod +x setup.sh   
+./setup.sh -u
+source ../.env/bin/activate   
+python3 -m ipykernel install --user --name=notebookdev3 
+
 # Installing
 
 Install Scalpel using pip with the following command

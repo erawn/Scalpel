@@ -11,6 +11,11 @@ requires = [
         "setuptools",
         "dataclasses",
         "pycg",
+        "sphinx",
+        "myst_parser",
+        "sphinx_rtd_theme",
+        "sphinxcontrib-spelling",
+        "pydoctor",
 ]
 
 [tool.black]

@@ -42,11 +42,11 @@ function check_installed_python() {
 
 function updateenv() {
     echo_block "Updating your virtual env"
-    if [ ! -f .env/bin/activate ]; then
+    if [ ! -f ../.env/bin/activate ]; then
         echo "Something went wrong, no virtual environment found."
         exit 1
     fi
-    source .env/bin/activate
+    source ../.env/bin/activate
     SYS_ARCH=$(uname -m)
     echo "pip install in-progress. Please wait..."
     ${PYTHON} -m pip install --upgrade pip wheel setuptools
